@@ -1,10 +1,12 @@
 import './App.css';
+import AllStudents from './components/AllStudents';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <h1>Doshinkan Aikido</h1>
       <p>Doshinkan Aikido</p>
+      <AllStudents />
     </div>
   );
 }
