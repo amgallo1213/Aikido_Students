@@ -21,6 +21,14 @@ const StudentSchema = new mongoose.Schema({
     beltColor: {
         type: Boolean,
         required: true,
+    },
+    email:  {
+        type: String,
+        required: true
+    },
+    phoneNumber: {
+        type: Number,
+        required: true,
     }
 }, {timestamps: true});
 
