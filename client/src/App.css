@@ -10,4 +10,7 @@ p {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-
+#student-table  {
+  width: 70%;
+  margin-left: 300px;
+}

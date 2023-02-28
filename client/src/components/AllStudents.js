@@ -22,7 +22,7 @@ const AllStudents = (props) => {
     return ( 
         <div>
             <div>
-                <Table>
+                <Table bordered hover size="sm" id="student-table">
                     <thead>
                         <tr>
                             <th>First Name</th>
