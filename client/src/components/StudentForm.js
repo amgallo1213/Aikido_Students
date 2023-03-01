@@ -21,7 +21,7 @@ const StudentForm = (props) => {
             })
             .then((res) => {
                 console.log(res.data);
-                navigate('/')
+                navigate('/students')
             })
             .catch((err) => {
                 console.log(err);
@@ -50,8 +50,8 @@ const StudentForm = (props) => {
                     <Col>
                         <Form.Control placeholder="Phone Number" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)}  />
                     </Col>
-            </Row>
-            <Button  variant="contained" type="submit">Add Student</Button> 
+                </Row>
+                <Button  variant="contained" type="submit">Add Student</Button> 
             </Form>
         </div>
     );
