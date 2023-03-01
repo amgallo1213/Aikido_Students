@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Link, navigate } from '@reach/router';
-import { Form, Col, Row } from 'react-bootstrap';
+import { Form, Col, Row, Button } from 'react-bootstrap';
 
 
 const StudentForm = (props) => {
@@ -51,6 +51,7 @@ const StudentForm = (props) => {
                         <Form.Control placeholder="Phone Number" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)}  />
                     </Col>
             </Row>
+            <Button  variant="contained" type="submit">Add Student</Button> 
             </Form>
         </div>
     );
