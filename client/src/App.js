@@ -8,10 +8,9 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Router>
-        
+      <Router> 
         <AllStudents path="/students" default/>
-        <StudentForm path="/students/create" />
+        <StudentForm path="/students/create" exact component={StudentForm} />
       </Router>
       
     </div>

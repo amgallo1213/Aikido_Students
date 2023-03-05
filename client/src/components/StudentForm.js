@@ -15,22 +15,20 @@ const StudentForm = (props) => {
     const [phoneNumber, setPhoneNumber] = useState("");
 
     const onSubmitHandler = (e) => {
-        e.preventDefault();
-            axios.post('http://localhost:8000/api/students/create', {
-                firstName, lastName, birthdate, startDate, beltColor, email, phoneNumber
-            })
-            .then((res) => {
-                console.log(res.data);
-                navigate('/students')
-            })
-            .catch((err) => {
-                console.log(err);
-                console.log('err.response:', err.response);
-                console.log('err.response.data', err.response.data)
-            });
+    e.preventDefault();
+        axios.post('http://localhost:8000/api/students/create', {
+            firstName, lastName, birthdate, startDate, beltColor, email, phoneNumber
+        })
+        .then((res) => {
+            console.log(res.data);
+            navigate('/students')
+        })
+        .catch((err) => {
+            console.log(err);
+            console.log('err.response:', err.response);
+            console.log('err.response.data', err.response.data)
+        });
     };
-
-
 
     return ( 
         <div>
