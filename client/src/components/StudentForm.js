@@ -32,6 +32,7 @@ const StudentForm = (props) => {
 
     return ( 
         <div>
+            <p><Link to="/students">Main</Link></p>
             <Form onSubmit={onSubmitHandler}>
                 <Row>
                     <Col>
